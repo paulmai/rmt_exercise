@@ -1,7 +1,7 @@
 # Paul Maidment - Excercise for RMT
 Exercise for RMT
 
-1) The code is broken into Two Interfaces and Two Implementation classes, these represent the cart and the product
+1) The code consists of Two Interfaces and Two Implementation classes, these represent the cart and the product
 
 2) PHPUnit tests are used to test the code and prove that key features work.
 
