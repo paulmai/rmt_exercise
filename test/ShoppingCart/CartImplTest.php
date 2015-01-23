@@ -24,6 +24,22 @@
 			$this->assertEquals(4.90,$cartImpl->getPriceOf($productImpl));
 		}
 
+		public function test_that_update_to_unit_quantity_is_correctly_performed()
+		{
+			$cartImpl = new CartImpl();
+			$productImpl = new ProductImpl();
+                        $productImpl->setName('Tomato');
+                        $productImpl->addUnitPrice(0,0.20);
+                        $productImpl->addUnitPrice(21,0.18);
+                        $productImpl->addUnitPrice(100,0.14);
+                        $cartImpl->addItem($productImpl,20);
+			$this->assertEquals(4.00,$cartImpl->getPriceOf($productImpl));
+			//Add five more units of the same product
+                        $cartImpl->addItem($productImpl,5);
+			$this->assertEquals(4.90,$cartImpl->getPriceOf($productImpl));
+
+		}
+
 		public function test_that_get_total_sum_returns_correct_content()
 		{
 			$cartImpl = new CartImpl();
@@ -54,9 +70,4 @@
 	
 		}
 
-		/*	
-        	public function getTotalSum();
-        	public function addItem(Product $product, $amount);
-        	public function getPriceOf(Product $product);
-		*/	
 	}

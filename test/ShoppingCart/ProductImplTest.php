@@ -40,9 +40,9 @@
 			$productImpl->addUnitPrice(0,0.20);
 			$productImpl->addUnitPrice(21,0.18);
                         $productImpl->addUnitPrice(100,0.14);
-			$this->assertEquals($productImpl->getUnitPriceForQuantity(1),0.20);
-			$this->assertEquals($productImpl->getUnitPriceForQuantity(25),0.18);
-			$this->assertEquals($productImpl->getUnitPriceForQuantity(100),0.14);
+			$this->assertEquals(0.20,$productImpl->getUnitPriceForQuantity(1));
+			$this->assertEquals(0.18,$productImpl->getUnitPriceForQuantity(25));
+			$this->assertEquals(0.14,$productImpl->getUnitPriceForQuantity(100));
 				
 		}
 

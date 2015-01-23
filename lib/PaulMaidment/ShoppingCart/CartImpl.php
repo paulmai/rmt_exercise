@@ -40,6 +40,12 @@
 	
 		public function addItem(Product $product, $amount)
 		{
+			//If this is an update to quantity, update the numbers
+			if(isset($this->products[$product->getName()])){
+				$quantity = $this->products[$product->getName()]['qty'];
+				$amount += $quantity;
+			}
+
 			$this->products[$product->getName()]=array('obj'=>$product,'qty' => $amount);
 		}
 	
