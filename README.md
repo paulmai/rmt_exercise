@@ -5,16 +5,14 @@ Exercise for RMT
 
 2) PHPUnit tests are used to test the code and prove that key features work.
 
-4) Composer and PHPUnit are required to build the project
+3) Composer and PHPUnit are required to build the project
 
 
 Installation instructions
 -------------------------
 1) Check out the project
 
-2) Run composer update if any changes are needed to autoloading
-
-3) Run the tests using
+2) Run the tests using
 
   ./run_tests.sh
   
