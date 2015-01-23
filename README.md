@@ -1,4 +1,4 @@
-# rmt_exercise
+# Paul Maidment - Excercise for RMT
 Exercise for RMT
 
 1) The code is broken into Two Interfaces and Two Implementation classes, these represent the cart and the product
