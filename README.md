@@ -5,8 +5,6 @@ Exercise for RMT
 
 2) PHPUnit tests are used to test the code and prove that key features work.
 
-3) The 'Receipt printing' facility is WIP (needs more tests) and will be finished off and fully tested soon
-
 4) Composer and PHPUnit are required to build the project
 
 
@@ -18,7 +16,7 @@ Installation instructions
 
 3) Run the tests using
 
-  phpunit tests/ShoppingCart/*
+  ./run_tests.sh
   
   
 
