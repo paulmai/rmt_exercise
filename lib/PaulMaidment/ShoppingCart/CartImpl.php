@@ -15,7 +15,7 @@
 		public function getTotalSum()
 		{
 			$total = 0;
-			$summary = "\n";
+			$summary = "";
 			foreach($this->products as $product){
 
 				$line_price = $product['obj']->getTotalPrice($product['qty']);

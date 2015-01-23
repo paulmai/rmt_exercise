@@ -43,9 +43,13 @@
                         $cartImpl->addItem($productImpl,10);
 		
 			$invoice = $cartImpl->getTotalSum();
-			print_r($invoice);
+			
+			//For the sake of visual confirmation, we will dump out the invoice on the command line
+			print_r("\n".$invoice);
+
+			//The real test, assertion of the content
+			$this->assertEquals("25        Tomato              4.90      \n10        Cucumber            1.00      \n========================================\n          Total               5.90      ",$invoice);
 			echo("\n");
-			//TODO: Not technically a test, so let's assert the actual value we are hoping for	
 
 	
 		}
