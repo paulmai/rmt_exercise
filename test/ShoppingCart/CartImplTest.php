@@ -21,7 +21,7 @@
                         $productImpl->addUnitPrice(21,0.18);
                         $productImpl->addUnitPrice(100,0.14);
 			$cartImpl->addItem($productImpl,25);
-			$this->assertEquals($cartImpl->getPriceOf($productImpl),4.90);
+			$this->assertEquals(4.90,$cartImpl->getPriceOf($productImpl));
 		}
 
 		public function test_that_get_total_sum_returns_correct_content()
@@ -44,8 +44,10 @@
 		
 			$invoice = $cartImpl->getTotalSum();
 			print_r($invoice);
-			die();
-		
+			echo("\n");
+			//TODO: Not technically a test, so let's assert the actual value we are hoping for	
+
+	
 		}
 
 		/*	

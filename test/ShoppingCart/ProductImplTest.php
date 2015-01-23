@@ -16,7 +16,7 @@
 		{
 			$productImpl = new ProductImpl();
 			$productImpl->setName('Foo');
-			$this->assertEquals($productImpl->getName(),'Foo');
+			$this->assertEquals('Foo',$productImpl->getName());
 		}
 
 		public function test_when_no_price_data_available_exception_is_thrown_when_price_requested()
@@ -52,7 +52,7 @@
                         $productImpl->addUnitPrice(0,0.20);
                         $productImpl->addUnitPrice(21,0.18);
                         $productImpl->addUnitPrice(100,0.14);
-			$this->assertEquals($productImpl->getTotalPrice(25),4.90);
+			$this->assertEquals(4.90,$productImpl->getTotalPrice(25));
 		}
 		
 	}
