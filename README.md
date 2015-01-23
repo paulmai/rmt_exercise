@@ -13,7 +13,9 @@ Exercise for RMT
 Installation instructions
 -------------------------
 1) Check out the project
+
 2) Run composer update if any changes are needed to autoloading
+
 3) Run the tests using
 
   phpunit tests/ShoppingCart/*
