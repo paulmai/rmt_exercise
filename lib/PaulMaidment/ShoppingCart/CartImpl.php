@@ -18,15 +18,15 @@
 			$summary = "\n";
 			foreach($this->products as $product){
 
-				$qty_col = pad_string($product['qty'],10,' ');
-				$name_col = pad_string($product['obj']->getName(),20,' ');
-				$price_col = pad_string($product['obj']->getTotalPrice($product['qty']),10,' ');
+				$qty_col = str_pad($product['qty'],10,' ');
+				$name_col = str_pad($product['obj']->getName(),20,' ');
+				$price_col = str_pad($product['obj']->getTotalPrice($product['qty']),10,' ');
 				$separator = "\n";
 				$line = $qty_col.$name_col.$price_col.$separator;
 				$summary .= $line;
  
 			}
-			$summary .= pad_string("",40,"=");
+			$summary .= str_pad("",40,"=");
 
 			$summary .= "\n";
 			$summary .= "Total\t\t\t";
