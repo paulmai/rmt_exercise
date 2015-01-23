@@ -1,5 +1,4 @@
 # Paul Maidment - Excercise for RMT
-Exercise for RMT
 
 1) The code consists of Two Interfaces and Two Implementation classes, these represent the cart and the product
 
